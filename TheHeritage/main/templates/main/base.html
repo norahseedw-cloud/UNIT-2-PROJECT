@@ -5,33 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    {% block css %}{%endblock%}
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
     <div class="hero">
-        {% block header %}{%endblock%}
+  
         <nav class="nav-bar">
-        <img src="{%static 'images/logo.png'%}" alt="" class="logo">
+        <a href="{% url 'main:home_view' %}"><img src="{%static 'images/logo.png'%}" alt="" class="logo"></a>
         <ul class="nav-list">
-            <li><a href="" class="links-nav">Home</a></li>
-            <li><a href="{% url 'main:clothing_view' %}" class="links-nav">clothing</a></li>
-            <li><a href="" class="links-nav">Home</a></li>
-            <li><a href="" class="links-nav">Home</a></li>
+            <li><a href="{% url 'main:home_view' %}" class="links-nav">Home</a></li>
+            <li><a href="{% url 'main:foods_view' %}" class="links-nav">Traditional Food</a></li>
+            <li><a href="{% url 'main:clothing_view' %}" class="links-nav">Traditional Clothing</a></li>
+            <li><a href="" class="links-nav">Traditional Games</a></li>
+            <li><a href="" class="links-nav">Handicrafts</a></li>
+            <li><a href="" class="links-nav">Folk Arts</a></li>
+            <li><a href="" class="links-nav">Customs & Traditions </a></li>
         </ul>
     </nav>
-    {% block title-header%}
+    {% block header%}
 
     {%endblock%}
     </div>
     <main>
+        <div class="main-page" id="main-page">
 
         {% block content %}
         {% endblock %}
-
+    </div>
     </main>
 
     <footer>
-        
+        <div class="footer-container">
+
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="{% static 'images/logo.png' %}" alt="">
+                    <h4>The Heritage Of Saudi Arabia</h4>
+                </div>
+                <p>
+                    A website exploring Saudi culture through food, clothing, games, handicrafts, folk arts, and traditions.
+                </p>
+            </div>
+            <div class="footer-center">
+                <h5>Settings</h5>
+                <a href="?theme=dark">🌙 Dark Mode</a>
+                <a href="?lang=ar">🌐 العربية</a>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-link">
+                    <h5>Explore</h5>
+                    <a href="{% url 'main:home_view' %}">Home</a>
+                    <a href="{% url 'main:foods_view' %}">Traditional Food</a>
+                    <a href="{% url 'main:clothing_view' %}">Traditional Clothing</a>
+                    <a href="">Traditional Games</a>
+                </div>
+
+                <div class="footer-link">
+                    <h5>Culture</h5>
+                    <a href="">Handicrafts</a>
+                    <a href="">Folk Arts</a>
+                    <a href="">Customs & Traditions</a>
+                </div>
+            </div>
+
+        </div>
     </footer>
    
 </body>

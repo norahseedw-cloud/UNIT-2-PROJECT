@@ -1,0 +1,35 @@
+.food-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+
+.food-card{
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.food-card img{
+  width: 200px;
+  aspect-ratio: 1 / 1;  
+  object-fit: cover;
+}
+.food-content{
+  padding: 1rem;
+}
+
+.food-content h2{
+  font-size: 20px;
+}
+
+.food-content p{
+  font-size: 14px;
+}
+.food-card:hover{
+  transform: translateY(-5px);
+}

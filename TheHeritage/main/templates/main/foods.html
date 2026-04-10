@@ -1,0 +1,62 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block css%}
+<link rel="stylesheet" href="{%static 'css/style-food-page.css'%}">
+{%endblock%}
+{% block title %}Traditional Foods{%endblock%}
+
+
+
+{% block header %}
+
+<div class="hero">
+    <img src="{% static 'images/test.jpg' %}" class="back-img">
+
+    <div class="title-header">
+        <h1>Traditional Food</h1>
+        <p>Discover the flavors of Saudi Arabia</p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+{% block content%}
+
+<section class="box-intro">
+  <div class="intro">
+    <h2>Saudi Traditional Food</h2>
+    <p>
+      Saudi traditional food reflects the richness of the Kingdom's heritage and culture, featuring distinctive
+      flavors and simple ingredients that have been passed down through generations.
+   </p>
+  </div>
+  </section>
+
+
+  <div class="food-container">
+
+  <div class="food-card">
+    <img src="{% static 'images/Foods/jarish-central.jpg'%}" alt="Jareesh">
+
+    <div class="food-content">
+      <h2>Jareesh</h2>
+      <p>Traditional Saudi dish made with crushed wheat.</p>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="{% static 'images/Foods/qursan.jpg'%}" alt="Qursan">
+
+    <div class="food-content">
+      <h2>Qursan</h2>
+      <p>Delicious bread soaked with meat and vegetables.</p>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

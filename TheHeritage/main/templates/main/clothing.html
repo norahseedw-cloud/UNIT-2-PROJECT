@@ -1,14 +1,132 @@
 {% extends 'main/base.html' %}
 {% load static %}
 
-
+{% block css%}
+<link rel="stylesheet" href="{%static 'css/style-clothes-page.css'%}">
+{%endblock%}
 
 {% block title %}Clothings{%endblock%}
 
 {%block header%}
 
+<div class="hero">
+    <img src="{% static 'images/header-clothes.jpg' %}" class="back-img">
+
+    <div class="title-header">
+        <h1>Traditional Clothing</h1>
+        <p>Discover the elegance of Saudi traditional attire</p>
+    </div>
+</div>
+
 {%endblock%}
 
 {% block content%}
+<section class="box-intro">
+  <div class="intro">
+    <h2>Saudi Traditional Clothing</h2>
+    <p>  
+        Saudi traditional clothing reflects the rich cultural heritage and regional diversity of the Kingdom. Each garment carries unique designs,
+        fabrics, and details that have been passed down through generations, representing identity, tradition, and elegance.
+   </p>
+  </div>
+  </section>
+
+
+<section class="clothes-section">
+
+    <h2 class="section-title">Women Traditional Clothing</h2>
+    <section class="clothes">
+        
+        <!-- Women -->
+        <div class="clothes-card">
+            <img src="{%static 'images/clothes/west-clothe-women.jpg'%}" alt="">
+            <div class="card-data-clothes">
+                <h1>West Clothes</h1>
+                <p>Light fabrics with vibrant embroidery.</p>
+            </div>
+        </div>
+
+        <div class="clothes-card">
+            <img src="{%static 'images/clothes/east-clothe-women.jpg'%}" alt="">
+            <div class="card-data-clothes">
+                <h1>East Clothes</h1>
+                <p>Colorful designs inspired by coastal life.</p>
+            </div>
+        </div>
+
+        <div class="clothes-card">
+            <img src="{%static 'images/clothes/north-clothe-women.jpg'%}" alt="">
+            <div class="card-data-clothes">
+                <h1>North Clothes</h1>
+                <p>Warm garments with traditional details.</p>
+            </div>
+        </div>
+
+        <div class="clothes-card">
+            <img src="{%static 'images/clothes/south-clothe-women.jpg'%}" alt="">
+            <div class="card-data-clothes">
+                <h1>South Clothes</h1>
+                <p>Rich patterns and bold cultural identity.</p>
+            </div>
+        </div>
+
+        <div class="clothes-card">
+            <img src="{%static 'images/clothes/central-clothe-women.jpg'%}" alt="">
+            <div class="card-data-clothes">
+                <h1>Central Clothes</h1>
+                <p>Simple and classic traditional wear.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <h2 class="section-title">Men Traditional Clothing</h2>
+    <section class="clothes">
+
+        <!-- Men -->
+        <div class="clothes-card">
+            <img src="{%static 'images/clothes/west-clothe-men.jpg'%}" alt="">
+            <div class="card-data-clothes">
+                <h1>West Clothes</h1>
+                <p>Elegant styles with cultural details.</p>
+            </div>
+        </div>
+
+        <div class="clothes-card">
+            <img src="{%static 'images/clothes/east-clothe-men.jpg'%}" alt="">
+            <div class="card-data-clothes">
+                <h1>East Clothes</h1>
+                <p>Traditional outfits with unique patterns.</p>
+            </div>
+        </div>
+
+        <div class="clothes-card">
+            <img src="{%static 'images/clothes/north-clothe-men.jpg'%}" alt="">
+            <div class="card-data-clothes">
+                <h1>North Clothes</h1>
+                <p>Warm and practical traditional wear.</p>
+            </div>
+        </div>
+
+        <div class="clothes-card">
+            <img src="{%static 'images/clothes/south-clothe-men.jpg'%}" alt="">
+            <div class="card-data-clothes">
+                <h1>South Clothes</h1>
+                <p>Bold designs reflecting heritage.</p>
+            </div>
+        </div>
+
+        <div class="clothes-card">
+            <img src="{%static 'images/clothes/central-clothe-men.jpg'%}" alt="">
+            <div class="card-data-clothes">
+                <h1>Central Clothes</h1>
+                <p>Classic and timeless traditional style.</p>
+            </div>
+        </div>
+
+    </section>
+
+</section>
 
 {% endblock %}

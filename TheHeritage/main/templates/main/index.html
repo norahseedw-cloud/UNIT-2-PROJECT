@@ -1,27 +1,27 @@
 {% extends 'main/base.html' %}
 {% load static %}
 
+{% block css%}
+    <link rel="stylesheet" href="{%static 'css/style-home-page.css'%}">
+{%endblock%}
+{% block title %}Heritage Home page{%endblock%}
 
-{% block title %}Heritage{%endblock%}
 
-        {%block header%}
-       <video autoplay loop muted plays-inline class="back-video">
-            <source src="{% static 'video/video-header.mp4'%}" type="video/mp4">
-        </video>
-        {%endblock%}
-
-        {%block title-header%}
-            <div class="title-header">
+{%block header%}
+   <video autoplay loop muted plays-inline class="back-video">
+      <source src="{% static 'video/video-header.mp4'%}" type="video/mp4">
+    </video>
+    <div class="title-header">
         <h1>Heritage Of Saudi Arabia </h1>
         <p>
             <i>"A heritage we are proud of… and a culture we deeply cherish"</i>
         </p>
-
-        <a href="#" class="btn">Learn More</a>
+        <a href="#main-page" class="btn">Learn More</a>
     </div>
-        {%endblock%}
+{%endblock%}
+
 {% block content%}
-    <div class="main-page">
+    
         <section class="box-intro">
             <div class="intro">
                 <h2>About Saudi Heritage</h2>
@@ -37,8 +37,8 @@
                 <article class="card-article">
                     <img src="{% static 'images/food-card.jpg'%}" alt="" class="card-img">
                     <div class="card-data">
-                        <span class="card-desc">food of daudi arabia blah blah balh</span>
-                        <h2 class="card-title">Food</h2>
+                        <h2 class="card-title">Traditional Food</h2>
+                        <span class="card-desc">Saudi cuisine is rich and diverse, with dishes that represent the culture and traditions of each region.</span>
                         <a href="" class="card-button">Explore</a>
                     </div>
 
@@ -48,8 +48,8 @@
                 <article class="card-article">
                     <img src="{% static 'images/clothing-card.jpg'%}" alt="" class="card-img">
                     <div class="card-data">
-                        <span class="card-desc">food of daudi arabia blah blah balh</span>
-                        <h2 class="card-title">Food</h2>
+                        <h2 class="card-title">Traditional Clothing</h2>
+                        <span class="card-desc">Traditional clothing reflects the identity of Saudi society, with unique styles that vary across different regions.</span>
                         <a href="" class="card-button">Explore</a>
                     </div>
 
@@ -59,8 +59,8 @@
                 <article class="card-article">
                     <img src="{% static 'images/game-card.jpg'%}" alt="" class="card-img">
                     <div class="card-data">
-                        <span class="card-desc">food of daudi arabia blah blah balh</span>
-                        <h2 class="card-title">Food</h2>
+                        <h2 class="card-title">Traditional Games</h2>
+                        <span class="card-desc">Traditional games reflect the simplicity of the past and were a source of fun and social connection.</span>
                         <a href="" class="card-button">Explore</a>
                     </div>
 
@@ -70,8 +70,8 @@
                 <article class="card-article">
                     <img src="{% static 'images/art-card.jpg'%}" alt="" class="card-img">
                     <div class="card-data">
-                        <span class="card-desc">food of daudi arabia blah blah balh</span>
-                        <h2 class="card-title">Food</h2>
+                        <h2 class="card-title">Handicrafts</h2>
+                        <span class="card-desc">Handicrafts represent traditional skills such as weaving and pottery, showcasing creativity and heritage.</span>
                         <a href="" class="card-button">Explore</a>
                     </div>
 
@@ -81,8 +81,8 @@
                 <article class="card-article">
                     <img src="{% static 'images/play-card.jpg'%}" alt="" class="card-img">
                     <div class="card-data">
-                        <span class="card-desc">food of daudi arabia blah blah balh</span>
-                        <h2 class="card-title">Food</h2>
+                        <h2 class="card-title">Folk Arts</h2>
+                        <span class="card-desc">Folk arts include traditional dances and performances that express the spirit of Saudi culture.</span>
                         <a href="" class="card-button">Explore</a>
                     </div>
 
@@ -92,13 +92,12 @@
                 <article class="card-article">
                     <img src="{% static 'images/tradtional-card.jpg'%}" alt="" class="card-img">
                     <div class="card-data">
-                        <span class="card-desc">food of daudi arabia blah blah balh</span>
-                        <h2 class="card-title">Food</h2>
+                        <h2 class="card-title">Customs & Traditions</h2>
+                        <span class="card-desc">Customs and traditions show the values and social practices that have been passed down through generations.</span>
                         <a href="" class="card-button">Explore</a>
                     </div>
 
                 </article>
             </div>
-        </div>
     </div>
 {% endblock %}

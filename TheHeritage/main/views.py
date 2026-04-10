@@ -12,3 +12,7 @@ def home_view(request:HttpRequest):
 def clothing_view(request:HttpRequest):
 
     return render(request,'main/clothing.html')  
+
+def foods_view(request:HttpRequest):
+
+    return render(request,'main/foods.html')  
