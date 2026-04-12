@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{%static 'images/logo.png'%}">
     <link rel="stylesheet" href="{%static 'css/style.css'%}">
     {% block css %}{%endblock%}
     <title>{% block title %}{% endblock %}</title>
@@ -19,7 +20,7 @@
             <li><a href="{% url 'main:clothing_view' %}" class="links-nav">Traditional Clothing</a></li>
             <li><a href="{% url 'main:game_view' %}" class="links-nav">Traditional Games</a></li>
             <li><a href="{% url 'main:handicrafts_view' %}" class="links-nav">Handicrafts</a></li>
-            <li><a href="" class="links-nav">Folk Arts</a></li>
+            <li><a href="{% url 'main:folk_arts_view' %}" class="links-nav">Folk Arts</a></li>
             <li><a href="" class="links-nav">Customs & Traditions </a></li>
         </ul>
     </nav>

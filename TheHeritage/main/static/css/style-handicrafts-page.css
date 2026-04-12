@@ -8,12 +8,12 @@
   margin-bottom: 3rem;
 }
 
-/* كل عنصر */
+
 .craft {
   margin-bottom: 4rem;
 }
 
-/* النص */
+
 .craft h3 {
   font-size: 28px;
   margin-bottom: 0.5rem;
@@ -25,7 +25,7 @@
   max-width: 600px;
 }
 
-/* السكرول */
+
 .images-scroll {
   display: flex;
   gap: 1rem;
@@ -34,7 +34,7 @@
   padding-bottom: 10px;
 }
 
-/* يخفي شكل السكرول (اختياري) */
+
 .images-scroll::-webkit-scrollbar {
   height: 6px;
 }
@@ -44,7 +44,7 @@
   border-radius: 10px;
 }
 
-/* الصور */
+
 .images-scroll img {
   width: 250px;
   height: 250px;
@@ -54,7 +54,7 @@
   transition: 0.3s;
 }
 
-/* تأثير hover 🔥 */
+
 .images-scroll img:hover {
   transform: scale(1.07);
 }

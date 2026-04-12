@@ -24,3 +24,7 @@ def game_view(request:HttpRequest):
 def handicrafts_view(request:HttpRequest):
 
     return render(request, 'main/handicrafts.html')
+
+def folk_arts_view(request: HttpRequest):
+
+    return render(request, 'main/folkarts.html')

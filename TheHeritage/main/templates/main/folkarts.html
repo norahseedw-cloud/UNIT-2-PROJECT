@@ -1,0 +1,114 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block css%}
+<link rel="stylesheet" href="{%static 'css/style-folkarts-page.css'%}">
+{%endblock%}
+{% block title %}Handicrafts{%endblock%}
+
+
+
+{% block header %}
+
+<div class="hero">
+    <img src="{% static 'images/header-performance.jpg' %}" class="back-img">
+
+    <div class="title-header">
+        <h1>Saudi Performing Arts</h1>
+        <p>Explore traditional music, dances, and cultural performances</p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+{% block content%}
+
+<section class="box-intro">
+  <div class="intro">
+    <h2>Saudi Performing Arts</h2>
+    <p>
+      Saudi performing arts reflect the richness of the Kingdom's cultural heritage, combining music, poetry, and movement. This page highlights some of
+      the most well-known traditional performances that continue to play an important role in celebrations and social life.
+   </p>
+  </div>
+</section>
+
+<section class="folk-arts">
+  <div class="card">
+    <img src="{% static 'images/performance/Al-Ardah.jpg' %}" alt="Al-Ardah">
+    <h3>Al-Ardah</h3>
+    <p>
+        A traditional Saudi performance known as Najdi Ardah, performed during national events and celebrations.
+        It symbolizes strength and unity and is recognized by UNESCO as intangible cultural heritage.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'images/performance/Al-Samri.jpg' %}" alt="Al-Samri">
+    <h3>Al-Samri</h3>
+    <p>
+       A popular folk music performance that originated in Al-Qassim and spread to different regions.
+        It combines singing, poetry, and rhythmic movement.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'images/performance/Yanbuawi-Art.jpg' %}" alt="Yanbuawi-Art">
+    <h3>Yanbuawi Art</h3>
+    <p>
+        A coastal musical art from Yanbu, characterized by fast rhythms.
+        It is part of traditional sea songs performed by sailors.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'images/performance/Southern-Ardah.jpg' %}" alt="Southern Ardah">
+    <h3>Southern Ardah</h3>
+    <p>
+        A traditional dance from southern Saudi Arabia, performed during 
+        celebrations and weddings, expressing bravery and pride.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'images/performance/Al-Zamil.jpg' %}" alt="Al-Zamil">
+    <h3>Al-Zamil</h3>
+    <p>
+        A group performance from Asir and Najran where participants stand in rows
+        and chant poetry together during special occasions.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'images/performance/Qasimi-Dance.jpg' %}" alt="Qasimi Dance">
+    <h3>Qasimi Dance</h3>
+    <p>
+        A traditional singing dance performed in western regions, known for its
+        unique Hijazi rhythm and musical style.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'images/performance/Al-Dahha.jpg' %}" alt="Al-Dahha">
+    <h3>Al-Dahha</h3>
+    <p>
+        A northern war dance performed by men, featuring chanting and strong rhythmic
+        movements that reflect courage and unity.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'images/performance/Al-Majroor.jpg' %}" alt="Al-Majroor">
+    <h3>Al-Majroor</h3>
+    <p>
+        A folkloric dance popular in western Saudi Arabia, especially in Taif,
+        known for its rhythmic drumming and group performance.
+    </p>
+  </div>
+
+  
+</section>
+{%endblock%}
