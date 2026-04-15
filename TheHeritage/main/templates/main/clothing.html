@@ -30,9 +30,10 @@
   </div>
 </section>
 
-<div class="heritage">
 
-  <!-- ================= WOMEN ================= -->
+
+<div class="heritage">
+  
   <h3 id="clothes-women">{% trans "Women Traditional Clothing" %}</h3>
 
   <div class="images-scroll">
@@ -249,7 +250,16 @@
     </div>
   </div>
 </div>
+</div>
 
+  <div class="video-section">
+  <h2>{% trans "The Future of Fashion in Saudi Arabia" %}</h2>
+
+  <video controls width="100%">
+    <source src="{% static 'video/video2.mp4' %}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 </div>
 
 {%endblock%}
